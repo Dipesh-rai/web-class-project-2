@@ -1,0 +1,51 @@
+@mixin space-between{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+@mixin space-between-end{
+    display:flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+@mixin align-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin gap-20{
+    display: flex;
+    gap: 20px;
+}
+@mixin gap-50{
+    display: flex;
+    gap: 50px;
+}
+
+@mixin border-visible{
+    &:focus-visible{
+        outline:none;
+    }
+}
+
+@mixin anime-header{
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 0;
+        background-color:$primary-color;
+        bottom: -3px;
+        left: 0;
+        transition: 0.5s;
+    }
+
+    &:hover::before {
+        width: 22px;
+    }
+}

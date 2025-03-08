@@ -1,0 +1,201 @@
+header {
+    font-family: $primary-fonts;
+    background-color: $primary-color;
+
+
+
+    .header-class {
+        .top-header-header {
+            border-bottom: 1px solid grey;
+            /* Extra small devices (phones) */
+
+
+            .top-header {
+                @include space-between;
+                padding: 10px 0;
+
+                .right-top {
+                    color: white;
+                    font-size: 13px;
+                    @include gap-20;
+
+                    .icon-link {
+                        display: flex;
+                        gap: 30px;
+                    }
+
+                    select {
+                        background-color: transparent;
+                        border: none;
+                        color: white;
+
+                        &:focus-visible {
+                            outline: none;
+                        }
+
+                        option {
+                            color: black;
+                        }
+                    }
+
+                }
+            }
+
+            @media (max-width:991px) {
+                display: none;
+            }
+        
+        }
+
+        .second-header {
+            padding: 20px 0;
+            @include space-between;
+            gap: 10px;
+
+            .logo {
+                display: flex;
+                align-items: center;
+            }
+
+            nav {
+
+                ul {
+                    text-transform: uppercase;
+
+                    li {
+                        font-size: 15px;
+
+                        a {
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+
+            .icon-second {
+                color: white;
+
+                ul {
+                    @include gap-50;
+
+                    li {
+                        a {
+                            position: relative;
+
+                            span {
+                                position: absolute;
+                                font-size: 8px;
+                                padding: 2px 5px;
+                                background-color: $secondary-color;
+                                border-radius: 50%;
+                                left: 7px;
+                                top: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .third-header {
+            padding: 0 0 20px 0;
+            @include space-between;
+            gap: 50px;
+
+            .category {
+                padding: 17px 30px;
+                background-color: $secondary-color;
+                color: black;
+                border-radius: 10px;
+            }
+
+            form {
+                background-color: white;
+                padding: 18px;
+                border-radius: 10px;
+                flex-grow: 1;
+                display: grid;
+                grid-template-columns: 0.5cm 3fr 1fr;
+                gap: 10px;
+
+                input {
+                    border: none;
+                    @include border-visible;
+                }
+
+                select {
+                    border: none;
+                    color: grey;
+                    @include border-visible;
+
+                }
+            }
+        }
+
+        @media (max-width: 991px) {
+            /* Styles for desktops */
+            display:none;
+        }
+
+        /* Small devices (tablets) */
+        @media (max-width: 767px) {
+            display:none;
+            /* Styles for tablets */
+        }
+
+        @media (max-width: 557px) {
+            display:none;
+
+        }
+
+
+    }
+
+    .media-start {
+        background-color: white;
+
+        .media-header {
+           display: none;
+            @media (max-width:991px) {
+            
+                @include space-between;
+                padding: 15px 0;
+        
+            }
+        }
+
+    }
+
+}
+
+
+// common animation
+.animation-hover {
+    display: flex;
+    gap: 25px;
+    text-transform: capitalize;
+    color: white;
+
+    li {
+        font-size: 13px;
+
+        a {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 0;
+                background-color: white;
+                bottom: -3px;
+                left: 0;
+                transition: 0.5s;
+            }
+
+            &:hover::before {
+                width: 22px;
+            }
+        }
+    }
+}

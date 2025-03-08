@@ -1,0 +1,29 @@
+$(document).ready(function(){
+    $(".second-banner").owlCarousel({
+        items:1,
+        autoplay:true,
+        loop:true,
+    });
+    $(".category-y").owlCarousel({
+      
+        loop:true,
+        autoplay:true,
+        responsiveclass:true,
+        responsive:{
+            0:{
+                items:2,
+                margin:30,
+            },
+            575:{
+                items:3,
+            },
+            767:{
+                items:5,
+            },
+            991:{
+                items:6,
+        margin:100,
+            }
+        }
+        });
+  });
