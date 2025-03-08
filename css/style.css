@@ -384,6 +384,8 @@ footer {
 .relatable-banner {
   font-family: "Exo 2", sans-serif;
   position: relative;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .relatable-banner .banner-detail {
   position: absolute;
@@ -398,6 +400,7 @@ footer {
   text-transform: uppercase;
   line-height: 24px;
   margin-bottom: 10px;
+  width: 160px;
 }
 .relatable-banner .banner-detail a {
   font-size: 13px;
@@ -631,4 +634,23 @@ footer {
 }
 .bg .products .sub-headin .d-flex .heading-animee.active::before {
   width: 60%;
+}
+.bg .services {
+  margin-top: 100px;
+}
+.bg .services .service-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-template-rows: 200px;
+}
+@media (max-width: 992px) {
+  .bg .services .service-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .bg .services .service-content {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=style.css.map */

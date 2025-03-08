@@ -173,6 +173,8 @@
 .relatable-banner {
     font-family: $primary-fonts;
     position: relative;
+    border-radius:10px;
+    overflow: hidden;
 
     .banner-detail {
         position: absolute;
@@ -187,6 +189,7 @@
             text-transform: uppercase;
             line-height: 24px;
             margin-bottom: 10px;
+            width:160px;
         }
 
         a {
@@ -426,5 +429,21 @@
         }
         
        
+}
+.services{
+    margin-top:100px;
+    .service-content{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:20px;
+        grid-template-rows:200px;
+      
+        @media (max-width:992px) {
+            grid-template-columns: repeat(2,1fr);
+        }
+        @media (max-width:768px) {
+            grid-template-columns: 1fr;
+        }
+    }
 }
 }
