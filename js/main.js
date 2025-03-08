@@ -22,8 +22,24 @@ $(document).ready(function(){
             },
             991:{
                 items:6,
-        margin:100,
+                 margin:100,
             }
         }
         });
+    $(".popular-article").owlCarousel({
+        margin:20,
+        loop:true,
+        autoplay:true,
+        responsive:{
+            0:{
+                items:2,
+            },
+            575:{
+                items:3,
+            },
+            767:{
+                items:5,
+            }
+        }
+    });
   });
