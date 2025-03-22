@@ -55,6 +55,80 @@ header {
   font-family: "Exo 2", sans-serif;
   background-color: #0F2041;
 }
+header .relativ-e {
+  position: relative;
+}
+header .relativ-e #loginpart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 20px;
+  padding-inline: 20px;
+  background-color: #FAF9F8;
+  width: 500px;
+  height: 100vh;
+  z-index: 100;
+  display: none;
+}
+header .relativ-e #loginpart .top-part-login {
+  display: flex;
+  justify-content: space-between;
+}
+header .relativ-e #loginpart .top-part-login h2 {
+  font-weight: 500;
+  line-height: 19px;
+  font-size: 20px;
+}
+header .relativ-e #loginpart .input-section {
+  margin-top: 50px;
+}
+header .relativ-e #loginpart .input-section label {
+  display: block;
+}
+header .relativ-e #loginpart .input-section input {
+  width: 100%;
+  padding: 10px;
+}
+header .relativ-e #loginpart .input-section .pass {
+  margin-top: 10px;
+}
+header .relativ-e #loginpart .input-section .form-control {
+  border: 0.125rem solid #e4e4e4;
+}
+header .relativ-e #loginpart .input-section .check {
+  width: fit-content !important;
+}
+header .relativ-e #loginpart .input-section .space-between {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .relativ-e #loginpart .input-section .space-between .checkboxed {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .relativ-e #loginpart .input-section .space-between .checkboxed .remember {
+  color: #9b9898;
+}
+header .relativ-e #loginpart .input-section .btns {
+  background-color: #222222;
+  padding: 10px;
+  width: 100%;
+  color: White;
+  margin-top: 10px;
+}
+header .relativ-e #loginpart .input-section .centers {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  color: #9b9898;
+}
+header .relativ-e #loginpart .input-section .centers span {
+  color: black;
+  cursor: pointer;
+}
 header .header-class {
   /* Small devices (tablets) */
 }
@@ -113,6 +187,12 @@ header .header-class .second-header nav ul li {
 }
 header .header-class .second-header nav ul li a {
   font-weight: 500;
+}
+header .header-class .second-header nav ul #login {
+  position: relative;
+}
+header .header-class .second-header nav ul #login #loginpart {
+  position: absolute;
 }
 header .header-class .second-header .icon-second {
   color: white;

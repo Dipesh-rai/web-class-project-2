@@ -3,7 +3,78 @@ header {
     background-color: $primary-color;
 
 
-
+.relativ-e{
+    position:relative;
+    #loginpart{
+        position:absolute;
+        top:0;
+        right:0;
+        padding-top:20px;
+        padding-inline:20px;
+        background-color:#FAF9F8;
+        width:500px;
+        height:100vh;
+        z-index:100;
+        display:none;
+        .top-part-login{
+            display:flex;
+            justify-content: space-between;
+            h2{
+                font-weight:500;
+                line-height: 19px;
+                font-size:20px;
+            }
+        }
+        .input-section{
+            margin-top:50px;
+            label{
+                display:block;
+            }
+            input{
+                width:100%;
+                padding:10px;
+            }
+            .pass{
+                margin-top:10px;
+            }
+            .form-control{
+                border: 0.125rem solid #e4e4e4;
+            }
+            .check{
+                width:fit-content !important;
+            }
+            .space-between{
+                margin-top:10px;
+                @include space-between;
+                .checkboxed{
+                    display:flex;
+                    align-items:center;
+                    gap:10px;
+                    .remember{
+                        color:#9b9898;
+                    }
+                }
+            }
+            .btns{
+                background-color:#222222;
+                padding:10px;
+                width:100%;
+                color:White;
+                margin-top:10px;
+            }
+            .centers{
+                margin-top:20px;
+                display:flex;
+                justify-content: center;
+                color:#9b9898;
+                span{
+                    color:black;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
     .header-class {
         .top-header-header {
             border-bottom: 1px solid grey;
@@ -67,6 +138,12 @@ header {
 
                         a {
                             font-weight: 500;
+                        }
+                    }
+                    #login{
+                        position:relative;
+                        #loginpart{
+                            position:absolute;
                         }
                     }
                 }

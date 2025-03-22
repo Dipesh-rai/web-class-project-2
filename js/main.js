@@ -42,4 +42,15 @@ $(document).ready(function(){
             }
         }
     });
-  });
+})
+    const login=document.getElementById("login")
+    const loginpart=document.getElementById("loginpart")
+    const close=document.getElementById("close")
+
+    login.addEventListener("click",function(){
+        loginpart.style.display="block"
+    })
+    close.addEventListener("click",function(){
+        loginpart.style.display="none"
+    })
+
